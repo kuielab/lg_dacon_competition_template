@@ -1,0 +1,7 @@
+*.png
+*.env
+*.pyc
+./weight
+*.pkl
+.idea
+logs

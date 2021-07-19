@@ -1,0 +1,7 @@
+ModelCheckpoint:
+  _target_: pytorch_lightning.callbacks.ModelCheckpoint
+  monitor: "valid/loss"
+  mode: "min"
+  verbose: False
+  dirpath: ${work_dir}/weight/${run_name}
+  filename: "{epoch:02d}"

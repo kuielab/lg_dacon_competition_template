@@ -1,0 +1,9 @@
+_target_: src.model.simple_unet.SimpleUNet
+lr: 0.00001
+loss: 'mse_loss'
+start_channels: 32
+growth_rate: 2
+num_layers: 5
+kernel_size: 3
+num_groups: 8
+

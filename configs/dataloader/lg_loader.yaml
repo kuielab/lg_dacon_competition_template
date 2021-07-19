@@ -1,0 +1,11 @@
+datasets:
+  _target_: src.dataloader.lg_dataloader.Datasets
+  data_path: ${data_dir}
+  size:
+    - 256
+    - 256
+  seed: ${seed}
+  ratio: 0.1     # validation set = |training dataset| * ratio
+  data_num: 10   # training set = |training dataset| * (1-ratio) * data_num
+  batch_size: 8  # 1 for validation, hard coded
+  num_workers: 0 # 0 for validation, hard coded

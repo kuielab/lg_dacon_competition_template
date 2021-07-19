@@ -1,0 +1,19 @@
+# @package _global_
+
+defaults:
+  - dataloader: lg_loader.yaml
+  - model : simple_unet.yaml
+  - logger: wandb.yaml
+  - trainer: default.yaml
+  - hydra: default.yaml
+  - callbacks:
+      - modelcheckpoint.yaml
+  - hparam: null
+  - experiment: null
+
+seed: 255
+work_dir: ${hydra:runtime.cwd}
+run_name: default_name
+
+wandb_api_key:  ${oc.env:wandb_api_key}
+data_dir: ${oc.env:data_dir}
