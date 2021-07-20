@@ -3,16 +3,16 @@
 
 This repository shows the example of the [pytorch-lightning](https://www.pytorchlightning.ai/) and [hydra](https://hydra.cc/) on [LG-Dacon competition](https://dacon.io/competitions/official/235746/overview/description). 
 
-### Setup Environment
+## Setup Environment
 
-#### Conda
+### Conda
 
 ```
 conda env create -f environment.yaml -n lg
 conda activate lg
 ```
 
-#### .env file
+### .env file
 
 you ***must*** create .env file by copying .env.sample to set environmental variables.
 
@@ -22,12 +22,12 @@ data_dir=[Your Path] # "/home/kuielab/lg_dacon_data_dir"
 ```
 
 - about ```wandb_api_key```
-   - we currently only support [wandb](https://wandb.ai/site) for logging.
-   - for ```wandb_api_key```, visit [wandb](https://wandb.ai/site), go to ```setting``` copy your api key
+   - we currently only support wandb for logging.
+   - for ```wandb_api_key```, visit [wandb](https://wandb.ai/site), go to ```setting```, and then copy your api key
 - about ```data_dir```
    - the ***absolute*** path where datasets are stored
 
-### Train script example
+## Train script example
 
 ```
 python main.py run_name=lg_example 
@@ -40,6 +40,10 @@ For example, you want to change the batch size, put options as follows:
 python main.py run_name=lg_example dataloader.datasets.batch_size=64
 ```
 
-### Training result example
+## Training result example
 
 https://wandb.ai/ielab/LG_hydra_example/reports/LG_Dacon_Competition--Vmlldzo4NjU2NzI
+
+## Acknowledgement
+
+[lightning-hydra-template](https://github.com/ashleve/lightning-hydra-template)
