@@ -1,0 +1,5 @@
+wandb==0.10.15
+pydub==0.24.1
+albumentations
+hydra-core
+python-dotenv
