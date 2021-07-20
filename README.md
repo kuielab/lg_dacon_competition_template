@@ -1,4 +1,5 @@
-# LG_Dacon_Competition
+# lg_dacon_competition_template
+
 
 This repository shows the example of the [pytorch-lightning](https://www.pytorchlightning.ai/) and [hydra](https://hydra.cc/) on [LG-Dacon competition](https://dacon.io/competitions/official/235746/overview/description). 
 
