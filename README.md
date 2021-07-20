@@ -5,10 +5,27 @@ This repository shows the example of the [pytorch-lightning](https://www.pytorch
 
 ### Setup Environment
 
+#### Conda
+
 ```
 conda env create -f environment.yaml -n lg
 conda activate lg
 ```
+
+#### .env file
+
+you ***must*** create .env file by copying .env.sample to set environmental variables.
+
+```
+wandb_api_key=[Your Key] # "xxxxxxxxxxxxxxxxxxxxxxxx"
+data_dir=[Your Path] # "/home/kuielab/lg_dacon_data_dir"
+```
+
+- about ```wandb_api_key```
+   - we currently only support [wandb](https://wandb.ai/site) for logging.
+   - for ```wandb_api_key```, visit [wandb](https://wandb.ai/site), go to ```setting``` copy your api key
+- about ```data_dir```
+   - the ***absolute*** path where datasets are stored
 
 ### Train script example
 
